@@ -6,5 +6,8 @@ edition = "2024"
 [lib]
 crate-type = ["staticlib", "cdylib"]
 
+[profile.release]
+debug = true  # 或者使用 debug = 1 或 2 来获取不同级别的符号
+
 [dependencies]
 sled = { path = "../sled" }
